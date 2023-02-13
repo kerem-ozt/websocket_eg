@@ -1,0 +1,52 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+
+ul {  
+    list-style-type: none;  
+    margin: auto;
+    padding:auto;
+}
+
+li {
+    margin: 9px;
+    padding: 3px;
+    background-color: white;
+}
+
+#bigbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#giris {
+    width: 250px;
+    display:flex;
+    justify-content: center;
+}
+
+#box1 {
+    width: 600px;
+    height: 800px;
+    border: solid;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: space-between;
+    visibility: hidden;
+}
+
+/* #header{
+   
+} */
+
+#chatscreen {
+    flex-grow: 1;
+    /* color: white; */
+    /* background-color: grey; */
+    background-color: lightgrey;
+}
+
+/* #send{
+ 
+} */

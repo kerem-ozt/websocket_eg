@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.js" integrity="sha512-rwu37NnL8piEGiFhe2c5j4GahN+gFsIn9k/0hkRY44iz0pc81tBNaUN56qF8X4fy+5pgAAgYi2C9FXdetne5sQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div id="bigbox">
+        <div id="giris">
+            <input id="inp" type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon2">
+            <button id="bt1" class="btn btn-outline-secondary" type="button" onclick="giris()">LogIn</button>
+        </div>
+        <div id="box1">
+            <div id="header">
+                <nav class="navbar navbar-light bg-light justify-content-between">
+                    <a class="navbar-brand">ChatApp</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item active">
+                            <a class="nav-link" onclick="oda1()" href="#">Oda1 <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" onclick="oda2()" href="#">Oda2</a>
+                          </li>
+                        </ul>
+                      </div>
+                    <!-- <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form> -->
+                </nav>
+            </div>
+            <div id="12">
+              <p>First select a room</p>
+            </div>
+            <div id="chatscreen">
+                <ul id="messages">
+                </ul>
+            </div>
+            <div id="send">
+                <div class="input-group mb-3">
+                    <input id="inp2" type="text" class="form-control" placeholder="Message" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button id="sendbtn" class="btn btn-outline-secondary" type="submit" onclick="msg()" >Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="chat.js" charset="UTF-8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
